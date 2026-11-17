@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dinksy</title>
+  <meta name="description" content="Dinksy: pickleball merch and animations starring DonDon and DinDin. Play hard. Dink responsibly.">
+  <meta name="theme-color" content="#FDBA21">
+  <link rel="icon" href="assets/img/dondon-face-grin.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <div class="banner">MVP preview · sample products · checkout connects with Shopify later</div>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="#home" aria-label="Dinksy home"><img src="assets/img/logo-black.png" alt="Dinksy"></a>
+      <nav class="nav nav-desktop" aria-label="Main">
+        <a href="#shop">Shop</a><a href="#dondon">DonDon</a><a href="#dindin">DinDin</a>
+      </nav>
+      <button class="cart-btn" data-open-cart aria-label="Open cart">Cart<span class="cart-count"></span></button>
+    </div>
+    <nav class="nav nav-mobile" aria-label="Main mobile">
+      <a href="#shop">Shop</a><a href="#dondon">DonDon</a><a href="#dindin">DinDin</a>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/img/logo-white.png" alt="Dinksy">
+          <p style="margin-top:10px">Play hard. Dink responsibly.</p>
+        </div>
+        <div class="socials">
+          <a href="#" data-soon="TikTok link goes here.">TikTok</a>
+          <a href="#" data-soon="Instagram link goes here.">Instagram</a>
+          <a href="#" data-soon="YouTube link goes here.">YouTube</a>
+        </div>
+      </div>
+      <div class="fine">© 2026 Dinksy · Clickable MVP, not a live store</div>
+    </div>
+  </footer>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Cart" aria-hidden="true">
+    <div class="drawer-head"><h2>Your cart</h2><button class="icon-btn" id="close-cart" aria-label="Close cart">✕</button></div>
+    <div class="drawer-body" id="cart-body"></div>
+    <div class="drawer-foot" id="cart-foot">
+      <div class="subtotal"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div>
+      <button class="btn black block" id="checkout">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true"><div class="card" id="modal-card"></div></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

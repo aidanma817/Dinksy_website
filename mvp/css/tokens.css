@@ -1,0 +1,23 @@
+/* Dinksy brand tokens — single source of truth (see CLAUDE.md §2, §3, §8) */
+:root {
+  --yellow: #FDBA21;
+  --black: #000000;
+  --white: #FFFFFF;
+  --pink: #FF8ACB;
+  --tan: #C49E6C;
+  --cream: #F7F4EF;
+
+  /* reference-only character tones */
+  --rose: #C84D77;
+
+  --font-display: "Titan One", "Lilita One", system-ui, sans-serif;
+  --font-body: "Nunito", "Fredoka", system-ui, sans-serif;
+
+  --line: 3px solid var(--black);
+  --radius: 22px;
+  --radius-sm: 14px;
+  --pop: 4px 4px 0 var(--black);
+  --pop-lg: 6px 6px 0 var(--black);
+  --gutter: 16px;
+  --max: 1120px;
+}
