@@ -51,8 +51,14 @@ export const MASCOTS = {
       { img: "dindin-drink.png", line: "Hydration is a strategy." },
     ],
     faces: [
+      // smug + surprised are high-res; the other four are from the old sheet
+      // (swap in high-res files with the same names when they're ready)
       { img: "dindin-face-smug.png", mood: "Default setting" },
+      { img: "dindin-face-grin.png", mood: "Saw that coming" },
+      { img: "dindin-face-ooh.png", mood: "Ooh, cute serve" },
       { img: "dindin-face-surprised.png", mood: "Wait, it went in?" },
+      { img: "dindin-face-side-eye.png", mood: "Was that a lob?" },
+      { img: "dindin-face-bored.png", mood: "Wake me at 10-10" },
     ],
     poses: [
       { img: "dindin-swing.png", label: "Effortless forehand" },

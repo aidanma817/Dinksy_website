@@ -99,7 +99,9 @@ sassy. The cool counterpart to DonDon.
 
 **Expressions on sheet:** default smug, smug grin, wide-eyed surprise, unimpressed
 side-eye. (On the current sheet the grin and side-eye faces are partly hidden behind the
-swing pose, so the website only shows smug and surprised.)
+swing pose. The website uses high-res smug and surprised, plus the other four (grin,
+ooh, side-eye, bored) from the old sheet until high-res versions arrive; swap them in by
+replacing `mvp/assets/img/dindin-face-<name>.png`.)
 
 **Poses on sheet:** casual one-legged forehand swing, lazily leaning over the net mid-spin,
 sipping an iced drink with a straw, front / three-quarter / back turnarounds.
