@@ -35,7 +35,7 @@ function renderCart() {
   const body = $("#cart-body");
   if (!cart.length) {
     body.innerHTML = `<div class="empty">
-      <img class="sticker" src="${img("dindin-face-bored.png")}" alt="">
+      <img class="sticker" src="${img("dindin-face-smug.png")}" alt="">
       <p><strong>Your cart is empty.</strong><br>DinDin is unimpressed.</p>
       <a class="btn yellow" href="#shop" data-close>Shop merch</a></div>`;
     $("#cart-foot").hidden = true;
@@ -247,7 +247,7 @@ function character(id) {
 
 function notFound() {
   return `<section class="wrap section" style="text-align:center">
-    <img class="sticker" src="${img("dondon-face-confused.png")}" alt="" style="max-height:180px;margin:0 auto 12px">
+    <img class="sticker" src="${img("dondon-face-side-eye.png")}" alt="" style="max-height:180px;margin:0 auto 12px">
     <h2>Out of bounds</h2><p>That page went long. DonDon is still looking for it.</p>
     <a class="btn yellow" href="#home">Back home</a></section>`;
 }
@@ -353,7 +353,7 @@ document.addEventListener("click", (e) => {
   if (rm) { setQty(rm.dataset.remove, 0); return; }
 
   if (t.closest("#checkout")) {
-    modal(`<img class="sticker" src="${img("dondon-face-sweaty.png")}" alt="">
+    modal(`<img class="sticker" src="${img("dondon-face-crying.png")}" alt="">
       <h2 style="font-size:30px">Almost!</h2>
       <p>Checkout goes live when the Shopify store is connected. Your cart is saved on this device.</p>
       <button class="btn yellow" data-modal-close>Keep browsing</button>`);

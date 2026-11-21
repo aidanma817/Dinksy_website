@@ -7,9 +7,9 @@ Dinksy is a playful pickleball brand built around two mascots who are living pic
 **This folder is the Dinksy website project.** Everything built here must follow this guide.
 
 Source references in this folder (treat these as the source of truth):
-- `Brand.webp`: brand sheet (logo, palette, typography, character style)
-- `Dondon.webp`: DonDon character sheet
-- `DinDin.webp`: DinDin character sheet
+- `Dinksy_studio/Brand.webp`: brand sheet (logo, palette, typography, character style)
+- `DonDon.png`: DonDon character sheet (high-res, 2752×1536; replaces the old `Dondon.webp`)
+- `DinDin.png`: DinDin character sheet (high-res, 2752×1536; replaces the old `DinDin.webp`)
 
 ---
 
@@ -73,17 +73,16 @@ everything into every point, sometimes too much.
 **Look:**
 - Pickleball Yellow body with darker mustard spots.
 - White sweatband/headband tied in a knot with trailing ends.
-- Beige bandage on his forehead/top of head.
-- Yellow limbs, white sneakers.
+- Beige bandage on his face (cheek area).
+- Yellow limbs and feet; no shoes on the current sheet.
 - Wooden (Wood Tan) paddle.
 - Often shown with sweat drops and motion lines.
 
-**Expressions on sheet:** fierce/determined scowl, gritted-teeth frustration, dizzy
-(spiral eyes, tongue out), huge grin, sweaty and worried, confused after a ball bonks him
-on the head, asleep ("Zzz").
+**Expressions on sheet:** angry with gritted teeth, dizzy (spiral eyes, wavy mouth), huge
+happy grin, crying (tear drop), worried side-eye, sleepy (eyes closed).
 
-**Poses on sheet:** diving fall with thumbs up (paddle dropped), sprinting after a ball,
-powering a swing surrounded by loose balls, front / back turnarounds.
+**Poses on sheet:** all-out lunge with gritted teeth, happy sprint after a ball, power
+swing hitting a ball, front / side / back turnarounds.
 
 ## 6. DinDin — Pink Mascot (she/her/hers)
 
@@ -98,8 +97,9 @@ sassy. The cool counterpart to DonDon.
 - Pink paddle.
 - Signature face: half-lidded eyes and a small smirk.
 
-**Expressions on sheet:** default smug, smug grin, eyes-closed "ooh", wide-eyed surprise,
-unimpressed side-eye, bored/resting with paddle.
+**Expressions on sheet:** default smug, smug grin, wide-eyed surprise, unimpressed
+side-eye. (On the current sheet the grin and side-eye faces are partly hidden behind the
+swing pose, so the website only shows smug and surprised.)
 
 **Poses on sheet:** casual one-legged forehand swing, lazily leaning over the net mid-spin,
 sipping an iced drink with a straw, front / three-quarter / back turnarounds.
@@ -150,8 +150,9 @@ Rules for this stack:
   as `dinksy-mvp`), open http://localhost:4321. ES modules need a server, not `file://`.
 - Files: `css/tokens.css` (brand tokens), `css/site.css`, `js/data.js` (mock mascots,
   products, quiz, videos), `js/app.js` (router, cart, interactions).
-- Art in `mvp/assets/img/` is cut from the three source sheets (transparent PNGs,
-  upscaled 3x, so slightly soft). Replace with high-res exports when available.
+- Art in `mvp/assets/img/` is cut from the high-res `DonDon.png` / `DinDin.png` sheets
+  (transparent PNGs, max 720px). The logo PNGs are still traced from the old brand sheet.
+  DinDin's swing pose overlaps two faces on her sheet; it was isolated region by region.
 - Mock only: sample prices, cart in `localStorage`, checkout/newsletter/social links show
   "connects later" messages. Mascot tap-cycles stand in for future Rive animations.
 - Each home block maps to a future Shopify section (hero, marquee, crew, featured
@@ -179,8 +180,8 @@ Rules for this stack:
 **Do**
 - Keep outlines thick and black; fills flat.
 - Keep mascots round, spotted, and stick-limbed.
-- Keep each mascot's signature accessories (DonDon: headband, bandage, sneakers, wood
-  paddle; DinDin: bow, tutu, pink paddle).
+- Keep each mascot's signature accessories (DonDon: headband, bandage, wood paddle;
+  DinDin: bow, tutu, pink paddle).
 - Keep personalities consistent: DonDon is never chill; DinDin is never frantic.
 - Use correct pronouns: DonDon he/him, DinDin she/her.
 
